@@ -4,8 +4,8 @@
 set -e
 
 # Vault server and root token
-VAULT_ADDR="http://18.206.236.230:8200"
-VAULT_TOKEN="hvs.IlNYyitwM41gAi4hpJ6kquxY"  # Your working root token
+VAULT_ADDR="http://<Vault-IP>:8200"
+VAULT_TOKEN="<Root Token hsv.>"  # Your working root token
 JSON_FILE="secrets.json"
 
 # Verify Vault connectivity
