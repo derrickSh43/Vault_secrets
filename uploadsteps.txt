@@ -14,6 +14,17 @@ VAULT_ADDR="http://<Vault-IP>:8200"
 VAULT_TOKEN="<Root Token hsv.>"  # Your working root token
 
 ################################################################
+Edit the secrets.json with your changes
+
+# secrets.json
+# Replace placeholders with your actual credentials:
+# - <your-aws-access-key>, <your-aws-secret-key>: AWS IAM credentials
+# - <your-sonarqube-token>: SonarQube API token
+# - <your-snyk-token>: Snyk API token
+# - <your-jfrog-username>, <your-jfrog-api-key>: JFrog Artifactory credentials
+# - <your-jira-email>, <your-jira-api-token>: JIRA user email and API token
+
+################################################################
 #From your local dir where these files are saved run:
 chmod +x upload_secrets.sh
 ./upload_secrets.sh
@@ -24,13 +35,3 @@ export VAULT_ADDR="http://<VAULT_IP>:8200"
 export VAULT_TOKEN="<ROOT_TOKEN>"
 vault kv get secret/aws-creds
 vault kv get aws/creds/jenkins-role  # AWS STS creds
-
-################################################################
-
-# secrets.json
-# Replace placeholders with your actual credentials:
-# - <your-aws-access-key>, <your-aws-secret-key>: AWS IAM credentials
-# - <your-sonarqube-token>: SonarQube API token
-# - <your-snyk-token>: Snyk API token
-# - <your-jfrog-username>, <your-jfrog-api-key>: JFrog Artifactory credentials
-# - <your-jira-email>, <your-jira-api-token>: JIRA user email and API token
