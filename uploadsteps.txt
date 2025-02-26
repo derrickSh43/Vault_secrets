@@ -15,8 +15,8 @@ VAULT_TOKEN="<Root Token hsv.>"  # Your working root token
 
 ################################################################
 #From your local dir where these files are saved run:
-chmod +x update_vault_secrets.sh
-./update_vault_secrets.sh
+chmod +x upload_secrets.sh
+./upload_secrets.sh
 
 ################################################################
 # to verify your uploads from theserver run:
